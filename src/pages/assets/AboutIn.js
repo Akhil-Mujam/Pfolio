@@ -15,28 +15,28 @@ const personal_info_data = [
       {
         index: 3,
         data_type: "Languages",
-        data_value: "Marathi/Hindi/English",
+        data_value: "Telugu/English/Hindi",
       },
     ],
     section_two: [
       {
         index: 1,
         data_type: "Phone",
-        data_value: "+91-8010844174",
+        data_value: "+91-9392642428",
         icon_class: "fa-solid fa-phone-flip",
         ic_color: "#e64a19",
       },
       {
         index: 2,
         data_type: "Email",
-        data_value: "ganrajp036956@gmail.com",
+        data_value: "akhilmujam@gmail.com",
         icon_class: "fa-solid fa-envelope",
         ic_color: "#00838F",
       },
       {
         index: 3,
         data_type: "Address",
-        data_value: "Pune, India - 413102",
+        data_value: "Hyderabad, India - 501510",
         icon_class: "fa-sharp fa-solid fa-location-dot",
         ic_color: "rgb(34 119 0)",
       },

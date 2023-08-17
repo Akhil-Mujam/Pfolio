@@ -24,22 +24,22 @@ const my_skills_data = [
     skill_name: "React JS",
     img_link: react_logo,
   },
-  {
-    id: 2,
-    skill_name: "Redux",
-    img_link: redux,
-  },
+  // {
+  //   id: 2,
+  //   skill_name: "Html",
+  //   img_link: redux,
+  // },
 
   {
     id: 3,
     skill_name: "JavaScript",
     img_link: javascript_logo,
   },
-  {
-    id: 4,
-    skill_name: "Typescript",
-    img_link: typescript,
-  },
+  // {
+  //   id: 4,
+  //   skill_name: "Typescript",
+  //   img_link: typescript,
+  // },
   {
     id: 5,
     skill_name: "Node JS",
@@ -60,21 +60,21 @@ const my_skills_data = [
     skill_name: "CSS3",
     img_link: css_logo,
   },
-  {
-    id: 9,
-    skill_name: "Tailwind",
-    img_link: tailwindcss,
-  },
+  // {
+  //   id: 9,
+  //   skill_name: "Tailwind",
+  //   img_link: tailwindcss,
+  // },
   {
     id: 10,
     skill_name: "Bootstrap",
     img_link: bootstrap_logo,
   },
-  {
-    id: 11,
-    skill_name: "Material UI",
-    img_link: material_logo,
-  },
+  // {
+  //   id: 11,
+  //   skill_name: "Material UI",
+  //   img_link: material_logo,
+  // },
   {
     id: 12,
     skill_name: "MySQL",
@@ -94,26 +94,27 @@ const my_skills_data = [
     id: 15,
     skill_name: "GitHub",
     img_link: github_logo,
-  },
-  {
-    id: 16,
-    skill_name: "Git VCS",
-    img_link: git_vcs_logo,
-  },
-  {
-    id: 17,
-    skill_name: "Jira",
-    img_link: jira,
-  },
-  {
-    id: 18,
-    skill_name: "Netlify",
-    img_link: netlify_logo,
-  },
-  {
-    id: 19,
-    skill_name: "Vercel",
-    img_link: vercel,
-  },
+  }
+  // },
+  // {
+  //   id: 16,
+  //   skill_name: "Git VCS",
+  //   img_link: git_vcs_logo,
+  // },
+  // {
+  //   id: 17,
+  //   skill_name: "Jira",
+  //   img_link: jira,
+  // },
+  // {
+  //   id: 18,
+  //   skill_name: "Netlify",
+  //   img_link: netlify_logo,
+  // },
+  // {
+  //   id: 19,
+  //   skill_name: "Vercel",
+  //   img_link: vercel,
+  // },
 ];
 export default my_skills_data;

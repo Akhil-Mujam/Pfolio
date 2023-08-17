@@ -14,15 +14,13 @@ function About() {
             About <span>Me</span>
           </h2>
           <p>
-            I am a Developer and Designer based in Pune, India 🌍. I have always
-            been fascinated by Knowledge 🧠 and learning new things. Throughout
-            my life, I have spoken, read and written in English fluently.
+            I am a Web Developer. I have always
+            been fascinated by Knowledge 🧠 and learning new things.
             Currently, I'm exploring Restful API's 👩🏾‍💻 as part of my skillset.
             When not working on projects or spending time with family or
-            friends, you can usually find me watching YouTube videos 💻 or
-            listening to music 🎧. As an experienced Web developer who is
-            skilled in many areas of development 😎 (responsive design being
-            one),I would love to work with businesses both small and large!
+            friends, you can usually find me watching YouTube or
+            listening to music 🎧. As a Web developer who is
+            skilled in many areas of development ,I would love to work with businesses both small and large!
           </p>
           <div className="personal_info">
             {personal_info_data.map((data, index) => {

@@ -8,7 +8,7 @@ function ProjHome() {
       <div className="proj_containar_section">
         <div className="proj_left">
           <h3>Projects & Experiences</h3>
-          <p>
+          <p color="white">
             You can find all of my projects on my profile on Github. You can
             view my activities, contributions and code on these projects. Some
             of these are completed and some are in progress. You can also leave
@@ -19,7 +19,7 @@ function ProjHome() {
           <Githubcomp
             backgroundColor="#512da8"
             shadow="0px 0px 13px rgb(255 255 255) "
-            href="https://github.com/ganraj21/Portfolio-Web-Application"
+            href="https://github.com/Akhil-Mujam"
           />
         </div>
         <div className="proj_right">

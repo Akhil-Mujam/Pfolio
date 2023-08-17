@@ -4,12 +4,12 @@ import Frontpage from './pages/Frontpage';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import EducationCert from './pages/EducationCert';
-import ProjectExp from './pages/Project_exp';
+// import ProjectExp from './pages/Project_exp';
 import Skills from './pages/Skills';
 import Navbar from './pages/Navbar';
 import Footer from './pages/Footer';
-import Login from './pages/components/Login';
-import AdminUser from './pages/components/AdminUser';
+import Contacts from './pages/Contacts';
+import ProjHome from './pages/components/ProjHome';
 
 const App = () => {
   return (
@@ -23,8 +23,10 @@ const App = () => {
             <>
               <Frontpage />
               <About />
-              <ProjectExp />
+              <ProjHome/>
+              {/* <ProjectExp /> */}
               <Contact />
+              {/* <Contacts/> */}
               <Footer />
             </>
           }
@@ -48,8 +50,8 @@ const App = () => {
             </>
           }
         />
-        <Route exact path="/admin/login" element={<Login />} />
-        <Route exact path="/user-backend" element={<AdminUser />} />
+        {/* <Route exact path="/admin/login" element={<Login />} />
+        <Route exact path="/user-backend" element={<AdminUser />} /> */}
       </Routes>
     </>
   );

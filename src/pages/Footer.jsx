@@ -7,7 +7,7 @@ function Footer() {
       <div className="footer_section">
         <BottomNav />
         <div className="line"></div>
-        <h2>Made with ❤️ by Ganesh</h2>
+        <h2>Copyright © 2023 All Rights Reserved by Akhil_Mujam</h2>
       </div>
     </div>
   );

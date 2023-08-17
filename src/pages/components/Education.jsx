@@ -1,20 +1,20 @@
 import React from "react";
 import "./Education.css";
-import dyp_college_img from "../../Image/dyp_college_img.jpg";
+
 import college_logo from "../../Image/college_logo.png";
 function Education() {
   const my_education_data = [
     {
       index: 1,
       education_logo_link: college_logo,
-      college_name: "D.Y. Patil College of Engineering",
-      college_degree_name: "B.E. in Information Technology",
+      college_name: "Cvr College of Engineering",
+      college_degree_name: "B.Tech in Computer Science and Engineering",
       education_spam: "2020-Present",
       education_info: [
         {
           index: 1,
           educ_info:
-            "⚡ I have studied basic software engineering subjects like DS, Algorithms, DBMS, Ml , OS etc.",
+            "⚡ I have studied basic software engineering subjects like DS, Algorithms, DBMS, Ml etc.",
         },
         {
           index: 2,
@@ -28,7 +28,7 @@ function Education() {
         },
       ],
       btn_name: "Visit Website",
-      btn_link: "https://dypcoeakurdi.collpoll.com/home",
+      btn_link: "https://cvr.ac.in/home4/",
     },
   ];
   return (
@@ -40,15 +40,15 @@ function Education() {
               <>
                 <div className="educ_upper_section" key={index}>
                   <div className="educ_container_one">
-                    <img src={dyp_college_img} alt="educ_image" />
+                    <img src="https://th.bing.com/th/id/R.660269134a26059bc7627031251999e3?rik=5TWjk%2bOjMTb%2bYA&riu=http%3a%2f%2fcvr.ac.in%2fhome4%2fimages%2fcollege-overview.jpg&ehk=ga8t2L11j6CJL6T4ZS6RvProEAPuzlfN5U0w7lYmTQU%3d&risl=&pid=ImgRaw&r=0" alt="educ_image" />
                   </div>
                   <div className="educ_container_two">
                     <div className="upper_container_section">
                       <div className="upper_left">
-                        <img
-                          src={data.education_logo_link}
+                        {/* <img
+                          src="https://th.bing.com/th/id/R.660269134a26059bc7627031251999e3?rik=5TWjk%2bOjMTb%2bYA&riu=http%3a%2f%2fcvr.ac.in%2fhome4%2fimages%2fcollege-overview.jpg&ehk=ga8t2L11j6CJL6T4ZS6RvProEAPuzlfN5U0w7lYmTQU%3d&risl=&pid=ImgRaw&r=0"
                           alt="college logo"
-                        />
+                        /> */}
                       </div>
                       <div className="upper_middle">
                         <h3>{data.college_name}</h3>

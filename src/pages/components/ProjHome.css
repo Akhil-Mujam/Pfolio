@@ -6,6 +6,7 @@
 .proj_containar_section,
 .proj_left,
 .proj_right {
+  color: brown;
   display: flex;
   align-content: center;
   justify-content: center;

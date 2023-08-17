@@ -21,14 +21,14 @@ const my_navbar_data = [
   {
     index: 3,
     nav_link: `/tech/#my_skill`,
-    navbar_name: 'Skills and Abilities',
+    navbar_name: 'Skills',
     nav__icon: RiCodeSSlashLine,
     another_page: true,
   },
   {
     index: 4,
     nav_link: '/education_and_certifications/#my-background',
-    navbar_name: 'Education and Certifications',
+    navbar_name: 'Education',
     nav__icon: AiOutlineSafetyCertificate,
     another_page: true,
   },

@@ -13,7 +13,7 @@ function Frontpage() {
             <div className="profile-details-name">
               <p className="primary-text">
                 Hello, I'M
-                <span className="highlighted-text">Ganesh Ghadge</span>
+                <span className="highlighted-text">Akhil_Mujam</span>
               </p>
             </div>
             <div className="profile-details-role">
@@ -51,7 +51,7 @@ function Frontpage() {
               <a href="#contact_page">
                 <button className="btn primary-btn">Hire Me</button>
               </a>
-              <a href="./Ganesh_Ghadge_Resume.pdf" download>
+              <a href="./Resume1.pdf" download>
                 <button className="btn highlighted-btn">Get Resume</button>
               </a>
             </div>

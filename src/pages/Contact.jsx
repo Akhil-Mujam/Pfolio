@@ -8,7 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import emailjs from 'emailjs-com';
 
 const Contact = (props) => {
-  const url = 'https://port-web-app.onrender.com/user-message';
+ const url = 'https://port-web-app.onrender.com/user-message';
   const [pvalue, setPvalue] = useState(0);
   const [userMsg, setUserMsg] = useState({
     name: '',
@@ -18,72 +18,34 @@ const Contact = (props) => {
 
   const form = useRef();
 
-  const toastOptions = {
-    position: 'top-right',
-    autoClose: 8000,
-    pauseOnHover: true,
-    theme: 'dark',
-  };
-  const handleInputs = (event) => {
-    setUserMsg({ ...userMsg, [event.target.name]: event.target.value });
-  };
-  const handleValidation = () => {
-    const { name, email, message } = userMsg;
-
-    if (message.length < 5) {
-      toast.error('Message is required', toastOptions);
-      return false;
-    } else if (name === '') {
-      toast.error('Enter your name here.', toastOptions);
-      return false;
-    } else if (name.length < 2) {
-      toast.error('Enter your full name', toastOptions);
-      return false;
-    } else if (email === '') {
-      toast.error('Email is required', toastOptions);
-      return false;
-    }
-    return true;
-  };
-  // const operator = async (e) => {
-  //   e.preventDefault();
-  //   const { name, email, message } = userMsg;
-  //   const requestOptions = {
-  //     name,
-  //     email,
-  //     message,
-  //   };
-  //   console.log(requestOptions);
-
-  //   if (handleValidation()) {
-  //     setPvalue(1);
-  //     const res = await fetch(url, {
-  //       method: 'POST',
-  //       headers: {
-  //         'Content-Type': 'application/json',
-  //       },
-  //       body: JSON.stringify(requestOptions),
-  //     });
-
-  //     const data = await res.json();
-
-  //     if (data) {
-  //       setPvalue(0);
-  //       emailjs.send(
-  //         'service_mcjo9r8',
-  //         'template_bp5qxel',
-  //         form.current,
-  //         'vjE1B1bCwi4pnyP7J'
-  //       );
-
-  //       toast.success(data.message, toastOptions);
-  //       e.stopPropagation();
-  //     }
-  //     console.log(data);
-  //     toast.error(data.error, toastOptions);
-  //   }
+  // const toastOptions = {
+  //   position: 'top-right',
+  //   autoClose: 8000,
+  //   pauseOnHover: true,
+  //   theme: 'dark',
   // };
+  // const handleInputs = (event) => {
+  //   setUserMsg({ ...userMsg, [event.target.name]: event.target.value });
+  // };
+  // const handleValidation = () => {
+  //   const { name, email, message } = userMsg;
 
+  //   if (message.length < 5) {
+  //     toast.error('Message is required', toastOptions);
+  //     return false;
+  //   } else if (name === '') {
+  //     toast.error('Enter your name here.', toastOptions);
+  //     return false;
+  //   } else if (name.length < 2) {
+  //     toast.error('Enter your full name', toastOptions);
+  //     return false;
+  //   } else if (email === '') {
+  //     toast.error('Email is required', toastOptions);
+  //     return false;
+  //   }
+  //   return true;
+  // };
+ 
   const operator = async (e) => {
     e.preventDefault();
     const { name, email, message } = userMsg;
@@ -94,9 +56,9 @@ const Contact = (props) => {
     };
 
     // Validate the form fields
-    if (!handleValidation()) {
-      return;
-    }
+    // if (!handleValidation()) {
+    //   return;
+    // }
 
     setPvalue(1);
 
@@ -122,7 +84,7 @@ const Contact = (props) => {
         // Successful response
         const data = await res.json();
         setPvalue(0);
-        toast.success(data.message, toastOptions);
+        // toast.success(data.message, toastOptions);
 
         // Clear the form fields
         setUserMsg({
@@ -136,9 +98,9 @@ const Contact = (props) => {
       }
     } catch (error) {
       // Handle fetch and emailjs errors
-      console.error('Error sending data:', error);
-      setPvalue(0);
-      toast.error('An error occurred while sending data', toastOptions);
+      // console.error('Error sending data:', error);
+      // setPvalue(0);
+      // toast.error('An error occurred while sending data', toastOptions);
     }
   };
 
@@ -150,9 +112,9 @@ const Contact = (props) => {
             <div className="user_form">
               <ToastContainer />
               <form
-                className="user_message_form"
-                method="POST"
-                onSubmit={operator}
+                // className="user_message_form"
+                // method="POST"
+                // onSubmit={operator}
               >
                 <h3>
                   Get in <span> Touch </span>
@@ -163,8 +125,8 @@ const Contact = (props) => {
                   <input
                     type="text"
                     name="name"
-                    value={userMsg.name}
-                    onChange={handleInputs}
+                    // value={userMsg.name}
+                    // onChange={handleInputs}
                     autoComplete="off"
                   />
                 </div>
@@ -173,9 +135,7 @@ const Contact = (props) => {
                   <input
                     type="email"
                     name="email"
-                    value={userMsg.email}
-                    onChange={handleInputs}
-                    autoComplete="off"
+                   
                   />
                 </div>
                 <div className="user_msg">
@@ -186,8 +146,8 @@ const Contact = (props) => {
                     id="user_text_area"
                     cols="30"
                     rows="6"
-                    value={userMsg.message}
-                    onChange={handleInputs}
+                    // value={userMsg.message}
+                    // onChange={handleInputs}
                   ></textarea>
                 </div>
                 <div className="user_send_msg_button">
